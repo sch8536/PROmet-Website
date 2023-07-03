@@ -28,7 +28,7 @@ EC2 인스턴스에 django 애플리케이션을 배포하는 방법에 대한 �
 
 [EC2에서 Django 웹사이트 호스팅](https://dev.to/waji97/hosting-a-django-website-on-ec2-part-1-4758)
 
-또한 Docker 컨테이너에 앱을 배포하기 위한 파일 Dockerfile과 nginx.conf파일을 포함했습니다
+또한 Docker 컨테이너에 앱을 배포하기 위한 파일 `Dockerfile`과 `nginx.conf`파일을 포함했습니다
 
 ## 사용한 기술
 
