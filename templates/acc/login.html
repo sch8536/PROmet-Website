@@ -1,0 +1,41 @@
+{% extends 'index.html' %}
+{%block content%}
+  <section class="login-block">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="card col-lg-4">
+        <div class="card-body">
+          <h1 class="text-center mt-4 mb-5" style="color: black;">LOGIN</h1>
+          <form method="post" action="{%url 'acc:login'%}">
+            {% csrf_token %}
+            {% include 'errors.html' %}
+            <div class="input-group mb-4">
+              <input type="text" class="form-control" name="username" id="username" placeholder="Enter User ID" value="{{form.username.value | default_if_none:''}}">
+            </div>
+
+            <div class="input-group mb-3">
+              <input type="password" class="form-control" name="password" id="password" placeholder="Enter User Password" value="{{form.password.value | default_if_none:''}}">
+            </div>
+
+            <div class="d-grid gap-1">
+              <button type="submit" class="btn btn-outline-dark mt-4">로그인</button>
+            </div>
+            <div class="d-grid gap-1 mt-3">
+              <a class="btn btn-dark" href="{%url 'acc:signup'%}">처음이시면 회원가입!</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card">
+          <img class="card-img-top" src="/static/base/images/img/login3.jpg" alt="...">
+        </div>
+      </div> 
+    </div>
+  </div>
+  </section>
+  <footer class="footer text-faded text-center py-5 mt-5 mb-0 lg-0">
+    <div class="container"><p class="m-0 small">Copyright &copy; Your Website 2022</p></div>
+  </footer>
+{%endblock%}
+

@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+{%block content%}
+
+<div class="ab" style="padding-top: 50px;">
+  <div class="container mb-5" style="font-size: 20px; font-weight: bold; color: white;">
+      <h1>{{user}}'s Profile</h1>
+      <hr>
+      <form method="post">
+          {% csrf_token %}
+          <div class="row">
+              <div class="col-md-4 mb-3">
+                  <p class="form-label">First Name:</p>
+                  {{ user.first_name }}
+              </div>
+              <div class="col-md-4 mb-3">
+                  <p class="form-label">Last Name:</p>
+                  {{ user.last_name }}
+              </div>
+              <div class="col-md-4 mb-3">
+                  <p class="form-label">Email:</p>
+                  {{ user.email }}
+              </div>
+          </div>
+      </form>
+  </div>
+</div>
+
+
+{%endblock%}
+
