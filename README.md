@@ -45,5 +45,3 @@ EC2 인스턴스에 django 애플리케이션을 배포하는 방법에 대한 �
 * **김건태** - *Front End* - [kimgeontae1](https://github.com/kimgeontae1)
 * **송찬호** - *Back End* - [sch8536](https://github.com/sch8536)
 
-
-# PROmet-Website
