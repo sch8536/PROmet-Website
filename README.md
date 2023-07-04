@@ -26,7 +26,7 @@ python manage.py runserver
 
 EC2 인스턴스에 django 애플리케이션을 배포하는 방법에 대한 자세한 블로그가 있습니다. 아래 링크를 따르십시오.
 
-[EC2에서 Django 웹사이트 호스팅](https://dev.to/waji97/hosting-a-django-website-on-ec2-part-1-4758)
+[EC2에서 Django 웹사이트 호스팅](https://slow-weaver-4e3.notion.site/EC2-Django-05dea54d9f374ffe874ff71022895b74?pvs=4)
 
 또한 Docker 컨테이너에 앱을 배포하기 위한 파일 `Dockerfile`과 `nginx.conf`파일을 포함했습니다.
 
